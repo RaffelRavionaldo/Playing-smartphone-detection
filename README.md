@@ -13,7 +13,28 @@ optional, you can install PyTorch to run it on your GPU. To install it, you can 
 
 If my models do not work well on your video, you can retrain the models. First one prepare the videos in a folder, then run my prepare_data.py. It will take ~30 frames per video, and then you can label it with your favorite tools. My suggestion you can try Roboflow or use this repo: https://github.com/HumanSignal/labelImg
 
-Don't forget to change line 8 to the path of your video. If you need more images to be taken for the video, change the number 30 in my video to a bigger number.
+Don't forget to change line 8 to the path of your video. If you need more images to be taken for the video, change the number 30 in my code to a bigger number.
+
+Then edit the data.yaml to the path of your dataset, and run the train_yolov8n.py code. You can experiment with the code like changing the batch size, imgsize etc. what i use right now just the default with some tuning.
+
+For the dataset, I need you to have the format similar to this : 
+
+```
+main
+---> Train
+--------> images
+---------------> img_1.jpg / img_1.png or whatever
+--------> labels
+---------------> img_1.txt
+---> Test
+--------> images
+---------------> img_2.jpg / img_2.png or whatever
+--------> labels
+---------------> img_2.txt
+--> val (optional)
+--------> images
+--------> labels
+```
 
 # Running the code
 
