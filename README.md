@@ -22,3 +22,7 @@ Run the detection.py to detect if someone hold the smartphone on their hand. lap
 change line 5, 8, and 18 to your path of model and videos.
 
 In this code, I determine if someone is playing smartphone or not, if the overlaps between the smartphone bbox and person bbox are more than the threshold (0.3). You can change the threshold value for more/less sensitive.
+
+## Output
+
+If someone holds or plays a smartphone, it will be a bounding box on the smartphone. If the smartphone is just placed on a table, etc., it will not have any bbox
