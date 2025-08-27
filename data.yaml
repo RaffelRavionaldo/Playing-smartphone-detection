@@ -1,0 +1,7 @@
+names:
+- person
+- smartphone
+nc: 2
+train: train_phone_smartphone/train
+val: train_phone_smartphone/test
+test: train_phone_smartphone/test
